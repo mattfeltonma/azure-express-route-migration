@@ -40,7 +40,7 @@ This repository contains a migration guide that could be used for migrations bet
 ### Implementation Phase 3 (Change new circuit to active and existing circuit to passive)
 You have two options to perform the cutover.
 #### Option 1 (Less Downtime) May result in temporary traffic asymmetry depending on BGP propagation timing and whether firewall is positioned in front of or behind customer router
-  1. (Traffic from Azure to On-Premises) Modify the weight of the ExpressRoute Gateway connection to the new circuit to a weight of 200 (if using AS-PATH Prepending on-premises you will need to make changes there to make the new circuit preferred)
+  1. (Traffic from Azure to On-Premises) [Modify the weight of the ExpressRoute Gateway connection](https://learn.microsoft.com/en-us/azure/expressroute/designing-for-disaster-recovery-with-expressroute-privatepeering#connection-weight) to the new circuit to a weight of 200 (if using AS-PATH Prepending on-premises you will need to make changes there to make the new circuit preferred)
   2. (Traffic from On-Premises to Azure) Modify the BGP metrics you configured in implementation phase to so that traffic from on-premises to Azure will prefer the new circuit.
   3. Delete old connection and get rid of old circuits
 #### Option 2 (10s (BFD)- 240s downtime (no BFD))
