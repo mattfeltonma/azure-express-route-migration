@@ -49,3 +49,7 @@ You have two options to perform the cutover.
 ### Testing Phase 3
 1. Repeat steps 4-5 from Testing Phase 1 to validate the routes are being exchanged between your router and the new BGP peers that are part of the Private Peering configuration on the new ExpressRoute Circuit.
 2. Perform some type of connectivity testing to existing workloads connected to the virtual network containing the ExpressRoute Gateway.
+
+## Helpful Links
+* [Architecting ExpressRoute for Disaster Recovery](https://learn.microsoft.com/en-us/azure/expressroute/designing-for-disaster-recovery-with-expressroute-privatepeering)
+* [ExpressRoute Migration](https://github.com/adstuart/azure-expressroute-migration)
