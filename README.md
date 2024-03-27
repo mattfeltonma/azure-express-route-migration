@@ -52,4 +52,4 @@ You have two options to perform the cutover.
 
 ## Helpful Links
 * [Architecting ExpressRoute for Disaster Recovery](https://learn.microsoft.com/en-us/azure/expressroute/designing-for-disaster-recovery-with-expressroute-privatepeering)
-* [Adam Stuart's Repositor on ExpressRoute Migration](https://github.com/adstuart/azure-expressroute-migration)
+* [Adam Stuart's Repository on ExpressRoute Migration](https://github.com/adstuart/azure-expressroute-migration)
